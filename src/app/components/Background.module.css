@@ -21,13 +21,15 @@
   &::after{
     content: '';
     display: block;
-    position: absolute;
+    position: absolute !important;
     height: 15vh;
     width: 100%;
     top: -50%;
     left: 0;
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(235, 78, 78, 0.5) 75%, rgba(235, 78, 78, 0.5) 100%) !important;
     animation: 5s cubic-bezier(0.4, 0.26, 0, 0.97) 0s infinite normal forwards running drop;
+    animation-fill-mode: forwards;
+    animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
   }
   &:nth-child(1){
     margin-left: -40%;
