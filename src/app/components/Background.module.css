@@ -76,10 +76,10 @@
 }
     
 @keyframes drop{
-  0%{
-    top: -50%;
+  from{
+    top: -20%;
   }
-  100%{
+  to{
     top: 110%;
   }
 }
