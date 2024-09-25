@@ -35,7 +35,7 @@ const DefaultTheme = createTheme({
         },
         MuiIconButton: {
             styleOverrides:{
-                root: ({ownerState}) => ({
+                root: ({}) => ({
                     "&:hover": {
                         backgroundColor: PalleteTheme.palette.primary.light,
                     }
@@ -44,7 +44,7 @@ const DefaultTheme = createTheme({
         },
         MuiButtonBase: {
             styleOverrides:{
-                root: ({ownerState}) => ({
+                root: ({}) => ({
                     "&:hover": {
                         backgroundColor: PalleteTheme.palette.primary.light,
                     }
