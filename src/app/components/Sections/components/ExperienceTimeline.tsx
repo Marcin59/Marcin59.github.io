@@ -43,7 +43,7 @@ export default function ExperienceTimeline() {
             transition={{duration: 1}}
           >
             <Typography variant="h5">GHOST Member</Typography>
-            <Typography variant='body2'>"ML in Timeseries" science club at PUT</Typography>
+            <Typography variant='body2'>ML in Timeseries science club at PUT</Typography>
             <Box sx = {{margin: "5px 0 0 10px"}}>
               <ul>
                 <li>
