@@ -14,7 +14,7 @@ const PalleteTheme = createTheme({
       },
       background: {
         paper: "#303030",
-        default: "#454545",
+        default: "#1f1f1f",
       },
     },
 });
