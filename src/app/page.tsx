@@ -4,8 +4,8 @@ import Introduce from "./components/Introduce";
 export default function Home() {
   return (
     <div>
-      <main style = {{display: "grid", gridTemplateColumns: "450px 1fr", height: '100vh', alignItems: "center"}}>
-        <Paper sx={{width: '90%', height: '70%', justifySelf: "right", overflow: 'hidden'}}>
+      <main style = {{display: "grid", gridTemplateColumns: "400px 1fr", height: '100vh', alignItems: "center"}}>
+        <Paper sx={{width: '90%', height: '85%', justifySelf: "right", overflow: 'hidden'}}>
           <Introduce/>
         </Paper>
         {/* <Paper sx={{width: '90%', height: '80%'}} >

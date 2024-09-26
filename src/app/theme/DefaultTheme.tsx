@@ -13,7 +13,7 @@ const PalleteTheme = createTheme({
         secondary: "#EB0000",
       },
       background: {
-        paper: "#454545",
+        paper: "#303030",
         default: "#454545",
       },
     },

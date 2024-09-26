@@ -6,7 +6,7 @@ import styles from './Introduce.module.css';
 export default function Introduce() {
     return(
         <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: "10px", height: "100%", position: "relative" }}>
-            <Box sx = {{width: "85%", margin: "25px 0 25px 0"}}>
+            <Box sx = {{width: "85%", margin: "25px 0 75px 0"}}>
                 <Typography variant="h4" sx={{margin: "0 0 5px 0"}}>
                     Marcin Kapiszewski
                 </Typography>
