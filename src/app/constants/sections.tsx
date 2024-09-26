@@ -7,22 +7,22 @@ const sections = [
     {
         name: 'About',
         icon: PersonIcon,
-        section: "About",
+        section: "#About",
     },
     {
         name: 'Experience',
         icon: SchoolIcon,
-        section: "Experience",
+        section: "#Experience",
     },
     {
         name: 'Portfolio',
         icon: WorkspacesIcon,
-        section: "Portfolio",
+        section: "#Portfolio",
     },
     {
         name: 'Contact',
         icon: ContactsIcon,
-        section: "Contact",
+        section: "#Contact",
     },
 ]
 
