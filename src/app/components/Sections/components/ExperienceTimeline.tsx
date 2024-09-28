@@ -25,7 +25,8 @@ export default function ExperienceTimeline() {
             <motion.div
               initial={{opacity: 0, x: -25}}
               whileInView={{opacity: 1, x: 0}}
-              transition={{duration: 1, delay: 0.1}}
+              viewport={{ once: true }}
+              transition={{duration: 1, delay: 0.6}}
             >
               October 2023 - Current
             </motion.div>
@@ -40,7 +41,8 @@ export default function ExperienceTimeline() {
           <motion.div
             initial={{opacity: 0, x: 25}}
             whileInView={{opacity: 1, x: 0}}
-            transition={{duration: 1}}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: 0.5}}
           >
             <Typography variant="h5">GHOST Member</Typography>
             <Typography variant='body2'>ML in Timeseries science club at PUT</Typography>
@@ -66,7 +68,8 @@ export default function ExperienceTimeline() {
             <motion.div
               initial={{opacity: 0, x: 25}}
               whileInView={{opacity: 1, x: 0}}
-              transition={{duration: 1, delay: 0.6}}
+              viewport={{ once: true }}
+              transition={{duration: 1, delay: 1.1}}
             >
               May 2022 - August 2023
             </motion.div>
@@ -81,7 +84,8 @@ export default function ExperienceTimeline() {
           <motion.div
             initial={{opacity: 0, x: -25}}
             whileInView={{opacity: 1, x: 0}}
-            transition={{duration: 1, delay: 0.5}}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: 1.0}}
           >
             <Typography variant="h5">Frontend Developer</Typography>
             <Typography variant='body2'>Stock Trade IQ</Typography>
@@ -122,7 +126,8 @@ export default function ExperienceTimeline() {
             <motion.div
               initial={{opacity: 0, x: -25}}
               whileInView={{opacity: 1, x: 0}}
-              transition={{duration: 1, delay: 1.1}}
+              viewport={{ once: true }}
+              transition={{duration: 1, delay: 1.6}}
             >
               July 2021 - August 2021
             </motion.div>
@@ -136,7 +141,8 @@ export default function ExperienceTimeline() {
           <motion.div
             initial={{opacity: 0, x: 25}}
             whileInView={{opacity: 1, x: 0}}
-            transition={{duration: 1, delay: 1}}
+            viewport={{ once: true }}
+            transition={{duration: 1, delay: 1.5}}
           >
             <Typography variant="h5">Wordpress Developer</Typography>
             <Typography variant='body2'>BCSG</Typography>

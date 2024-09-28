@@ -1,13 +1,15 @@
 "use client";
 import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
+import Classes from "./components/Classes";
 
 export default function Education() {
     return(
-        <div style={{height: '100%', maxWidth: "900px", display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '10px'}} id = "Education">
+        <div style={{minHeight: '100%', maxWidth: "900px", display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '10px'}} id = "Education">
             <motion.div
                 initial={{opacity: 0, y: 25}}
                 whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
                 transition={{duration: 1}}
             >
                 <Typography variant="h2" sx={{color: "primary.main", fontWeight: 'bold'}}>Education</Typography>
@@ -15,6 +17,7 @@ export default function Education() {
             <motion.div
                 initial={{opacity: 0, y: 25}}
                 whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
                 transition={{duration: 1, delay: 0.5}}
             >
                 <Typography variant="h3" sx={{marginBottom: "10px"}}>Poznań University of Technology</Typography>
@@ -24,9 +27,10 @@ export default function Education() {
             <motion.div
                 initial={{opacity: 0, y: 25}}
                 whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
                 transition={{duration: 1, delay: 1}}
             >
-                <Typography variant="h4" sx={{lineHeight: '40px', marginTop: "20px"}}>Key Coursework:</Typography>
+                <Classes/>
             </motion.div>
         </div>
     )
