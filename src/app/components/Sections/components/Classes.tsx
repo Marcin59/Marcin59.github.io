@@ -6,10 +6,11 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useEffect, useRef, useState } from "react"
 import CloseIcon from '@mui/icons-material/Close';
 import QuestionMarkIcon from '@mui/icons-material/QuestionMark';
+import ClassDescription from "./ClassDescription";
 
 export default function Classes() {
     // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const [selectedId, setSelectedId] = useState<any>(null)
+    const [selectedId, setSelectedId] = useState<string | null>(null)
     const presenceRef = useRef(null);
 
     const closePresence = () => {
@@ -93,11 +94,15 @@ export default function Classes() {
                             <Paper sx={{width: '100%', height: '100%'}}>
                                 {/* <motion.h5>{item.subtitle}</motion.h5>
                                 <motion.h2>{item.title}</motion.h2> */}
-                                <div style={{position: 'absolute', right: '10px', top: '10px'}}>
+                                <div style={{position: 'absolute', right: '10px', top: '10px', zIndex:'10'}}>
                                     <IconButton onClick={() => closePresence()}>
                                         <CloseIcon/>
                                     </IconButton>
                                 </div>
+                                <ClassDescription
+                                    classes={classes}
+                                    selectedId={selectedId}
+                                />
                             </Paper>
                         </motion.div>
                     )}

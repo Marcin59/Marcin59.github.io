@@ -1,4 +1,6 @@
-const classes = [
+import ClassInterface from "../interfaces/ClassInterface";
+
+const classes: ClassInterface[] = [
     {
         name: "Data Mining",
         description: "Data Mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.",
