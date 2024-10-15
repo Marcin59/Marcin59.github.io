@@ -4,7 +4,7 @@ import technologyLogos from "./technologyLogos";
 const classes: ClassInterface[] = [
     {
         name: "Data Mining",
-        description: "Data Mining is the process of discovering patterns in large data sets involving methods at the intersection of machine learning, statistics, and database systems.",
+        description: "In Data Mining, we delve into association rules, clustering, data annotation and augmentation, and data preprocessing. As part of our project, we developed a movie recommendation system based on clustering and performed data preprocessing for a selected regression dataset.",
         tools: [
             technologyLogos.scikitLearn,
             technologyLogos.django,
@@ -14,7 +14,7 @@ const classes: ClassInterface[] = [
     },
     {
         name: "Problem Classes",
-        description: "Machine Learning is the study of computer algorithms that improve automatically through experience and by the use of data.",
+        description: "Throughout the semester, we work in 5-member teams. My team's project focus on identifying common elements in inspiration photos and the final projects of artists. We work with domain experts in that field to identify the most similar features of the images.",
         semester: 5,
         tools: [
             technologyLogos.pytorch,
@@ -23,7 +23,7 @@ const classes: ClassInterface[] = [
     },
     {
         name: "Software Engineering",
-        description: "Software Engineering is the systematic application of engineering approaches to the development of software.",
+        description: "In Software Engineering, we explored the lifecycle of software development, emphasizing teamwork and collaboration. Our primary focus was on creating products using best practices and methodologies to ensure high-quality software solutions.",
         semester: 4,
         tools: [
             technologyLogos.java,
@@ -32,7 +32,7 @@ const classes: ClassInterface[] = [
     },
     {
         name: "Deep Learning",
-        description: "Deep Learning is a subset of machine learning where artificial neural networks, algorithms inspired by the human brain, learn from large amounts of data.",
+        description: "Lorem ipsum",
         semester: 5,
         tools: [
             technologyLogos.tensorFlow
@@ -40,7 +40,7 @@ const classes: ClassInterface[] = [
     },
     {
         name: "Computer Vision",
-        description: "Computer Vision is an interdisciplinary scientific field that deals with how computers can gain high-level understanding from digital images or videos.",
+        description: "Lorem ipsum",
         semester: 5,
         tools: [
             technologyLogos.tensorFlow,
@@ -49,7 +49,7 @@ const classes: ClassInterface[] = [
     },
     {
         name: "Database Systems",
-        description: "Database Systems are an organized collection of data, generally stored and accessed electronically from a computer system.",
+        description: "In Database Systems, we learned the basics of databases using MongoDB, focusing on data modeling, querying, and performance optimization. We also explored the practical applications of databases in real-world scenarios.",
         semester: 4,
         tools: [
             technologyLogos.mongoDB,

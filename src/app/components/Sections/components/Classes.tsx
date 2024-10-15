@@ -96,7 +96,7 @@ export default function Classes() {
                             ref={presenceRef}
                             layoutId={selectedId}
                             style={{
-                                width: '500px', height: '300px',
+                                width: '550px', height: '350px',
                                 marginTop: '20px', position:"relative"
                             }}
                         >
