@@ -97,7 +97,7 @@ export default function Classes() {
                             layoutId={selectedId}
                             style={{
                                 width: '550px', height: '350px',
-                                marginTop: '20px', position:"relative"
+                                marginTop: '0px', position:"relative"
                             }}
                         >
                             <Paper sx={{width: '100%', height: '100%'}}>
