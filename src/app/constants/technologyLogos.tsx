@@ -10,6 +10,7 @@ const technologyLogos = {
     tensorFlow: <Image src="/toolsLogos/tensorflow.png" alt="TensorFlow" key={"tensorflow"} width={30} height={30}/>,
     JUnit: <Image src="/toolsLogos/JUnit.png" alt="JUnit" key={"junit"} width={30} height={30}/>,
     pytorch: <Image src="/toolsLogos/pytorch.png" alt="PyTorch" key={"pytorch"} width={30} height={30}/>,
+    openCV: <Image src="/toolsLogos/opencv.png" alt="OpenCV" key={"opencv"} width={30} height={30}/>,
 }
 
 export default technologyLogos;
