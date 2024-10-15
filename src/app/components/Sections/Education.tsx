@@ -23,6 +23,7 @@ export default function Education() {
                 <Typography variant="h3" sx={{marginBottom: "10px"}}>Poznań University of Technology</Typography>
                 <Typography variant="body1">Bachelor of Science in Artificial Intelligence</Typography>
                 <Typography variant="body1">Expected Graduation: 2025</Typography>
+                <Typography variant="body1">Actual semester: 5</Typography>
             </motion.div>
             <motion.div
                 initial={{opacity: 0, y: 25}}

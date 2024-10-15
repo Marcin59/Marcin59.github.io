@@ -4,16 +4,17 @@ import Menu from "./components/Menu";
 import About from "./components/Sections/About";
 import Experience from "./components/Sections/Experience";
 import Education from "./components/Sections/Education";
+import styles from "./page.module.css";
 
 export default function Home() {
   return (
     <div>
-      <main style = {{display: "grid", gridTemplateColumns: "450px 1fr", height: '100vh', alignItems: "center"}}>
-        <div style=  {{width: '90%', height: '85%', justifySelf: "right", position: "relative"}}>
-          <Paper sx={{width: '100%', height: '100%', overflow: 'hidden', position: "relative", borderRadius: "50px"}}>
+      <main className={styles.mainPage}>
+        <div style=  {{width: '90%', height: '85%', position: "relative"}}>
+          <Paper className={styles.bigIntroduction}>
             <Introduce/>
           </Paper>
-          <div style={{position: "absolute", right: '-25px', top: '100px'}}>
+          <div className={styles.bigMenu}>
             <Menu/>
           </div>
         </div>
