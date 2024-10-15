@@ -6,7 +6,7 @@ const PalleteTheme = createTheme({
       primary: {
         main: '#EB4E4E',
         dark: "#EB0000",
-        light: "rgba(235, 78, 78, 0.25)",
+        light: "rgba(235, 78, 78, 0.5)",
       },
       text:{
         primary: "#ffffff",
@@ -37,7 +37,7 @@ const DefaultTheme = createTheme({
             styleOverrides:{
                 root: ({}) => ({
                     "&:hover": {
-                        backgroundColor: PalleteTheme.palette.primary.light,
+                        backgroundColor: "rgba(235, 78, 78, 0.25)",
                     }
                 })
             }
@@ -46,7 +46,7 @@ const DefaultTheme = createTheme({
             styleOverrides:{
                 root: ({}) => ({
                     "&:hover": {
-                        backgroundColor: PalleteTheme.palette.primary.light,
+                        backgroundColor: "rgba(235, 78, 78, 0.25)",
                     }
                 })
             }

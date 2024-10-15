@@ -52,10 +52,19 @@ export default function Classes() {
                                 opacity: selectedId === null ? 1 : 0.2,
                                 transition: 'opacity 0.5s', width: '100%', height: '100%',
                                 display: 'flex', alignItems: 'center', justifyContent: 'center',
-                                color: 'primary.main'
+                                position: 'relative',
                             }}
                         >
-                            <Typography variant="h5">{item.name}</Typography>
+                            <Typography color= 'primary.main' variant="h5">{item.name}</Typography>
+                            <div style={{position: 'absolute', bottom: 5, display: 'flex', justifyContent: 'space-around', width: "100%", alignItems: 'center'}}>
+                                <div style={{display: 'flex', gap: '5px'}}>
+                                    {item.tools?.map((tool, index) => (
+                                        <Typography key={index} variant="caption" color="primary.light">
+                                            {tool}
+                                        </Typography>
+                                    ))}
+                                </div>
+                            </div>
                         </Paper>
                     </motion.div>
                 </motion.div>
