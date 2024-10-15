@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div>
       <main className={styles.mainPage}>
-        <div style=  {{width: '90%', height: '85%', position: "relative"}}>
+        <div style=  {{width: '90%', height: '85%', position: "relative", justifySelf: 'right'}}>
           <Paper className={styles.bigIntroduction}>
             <Introduce/>
           </Paper>
