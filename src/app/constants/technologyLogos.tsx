@@ -11,6 +11,8 @@ const technologyLogos = {
     JUnit: <Image src="/toolsLogos/JUnit.png" alt="JUnit" key={"junit"} width={30} height={30}/>,
     pytorch: <Image src="/toolsLogos/pytorch.png" alt="PyTorch" key={"pytorch"} width={30} height={30}/>,
     openCV: <Image src="/toolsLogos/opencv.png" alt="OpenCV" key={"opencv"} width={30} height={30}/>,
+    r: <Image src="/toolsLogos/r.png" alt="R" key={"r"} width={30} height={30}/>,
+    shiny: <Image src="/toolsLogos/shiny.png" alt="Shiny" key={"shiny"} width={65} height={20}/>,
 }
 
 export default technologyLogos;

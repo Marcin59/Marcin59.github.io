@@ -5,6 +5,7 @@ import About from "./components/Sections/About";
 import Experience from "./components/Sections/Experience";
 import Education from "./components/Sections/Education";
 import styles from "./page.module.css";
+import Portfolio from "./components/Sections/Portfolio";
 
 export default function Home() {
   return (
@@ -18,10 +19,11 @@ export default function Home() {
             <Menu/>
           </div>
         </div>
-        <Box sx={{width: '90%', height: '90%', padding: '20px 50px 0px 50px', position: 'relative', color: 'text.primary', display: 'flex', justifyContent: 'center', overflow: 'auto', flexWrap: 'wrap', scrollBehavior: 'smooth'}} >
+        <Box sx={{width: '90%', height: '90%', padding: '0 50px 0px 50px', position: 'relative', color: 'text.primary', display: 'flex', justifyContent: 'center', overflow: 'auto', flexWrap: 'wrap', scrollBehavior: 'smooth', gap: '10px'}} >
           <About />
           <Experience />
           <Education />
+          <Portfolio />
         </Box>
       </main>
       <footer>
