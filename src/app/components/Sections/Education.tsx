@@ -1,7 +1,8 @@
 "use client";
 import { Typography } from "@mui/material";
 import { motion } from "framer-motion";
-import Classes from "./components/Classes";
+import PopoverList from "./components/PopoverList/PopoverList";
+import classes from "@/app/constants/classes";
 
 export default function Education() {
     return(
@@ -25,14 +26,7 @@ export default function Education() {
                 <Typography variant="body1">Expected Graduation: 2025</Typography>
                 <Typography variant="body1">Actual semester: 5</Typography>
             </motion.div>
-            <motion.div
-                initial={{opacity: 0, y: 25}}
-                whileInView={{opacity: 1, y: 0}}
-                viewport={{ once: true }}
-                transition={{duration: 1, delay: 1}}
-            >
-                <Classes/>
-            </motion.div>
+            <PopoverList items={classes}/>
         </div>
     )
 }

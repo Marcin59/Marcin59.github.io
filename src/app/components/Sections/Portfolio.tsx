@@ -1,8 +1,9 @@
 "use client";
-import { Typography } from "@mui/material";
+import { Box, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import ProjectDescription from "./components/ProjectDescription";
 import projects from "@/app/constants/projects";
+import PopoverList from "./components/PopoverList/PopoverList";
 
 const Portfolio = () => {
     return (
@@ -18,7 +19,7 @@ const Portfolio = () => {
                     <Typography variant="h2" sx={{color: "primary.main", fontWeight: 'bold'}}>Portfolio</Typography>
                 </motion.div>
             </div>
-            <div style={{display: 'flex', flexDirection: 'column', gap: '20px', width: '100%'}}>
+            <Box sx={{display: {xs: "none", md:'flex'}, flexDirection: 'column', gap: '20px', width: '100%'}}>
                 {projects.map((project, index) => (
                     <ProjectDescription
                         key={index}
@@ -30,7 +31,10 @@ const Portfolio = () => {
                         image={project.image}
                     />
                 ))}
-            </div>
+            </Box>
+            <Box sx={{display: {xs: "grid", md: "none"}}}>
+                <PopoverList items={projects}/>
+            </Box>
         </div>
     );
 }
