@@ -19,7 +19,7 @@ import { useContainerDimensions } from '@/app/hooks/useContainerDimensions';
 export default function ExperienceTimeline() {
 
   const componentRef = React.useRef<HTMLUListElement>(null)
-  const { width, height } = useContainerDimensions(componentRef)
+  const { width } = useContainerDimensions(componentRef)
   
   return (
     <Timeline ref={componentRef} position={width > 800 ? "alternate" : 'right'}
