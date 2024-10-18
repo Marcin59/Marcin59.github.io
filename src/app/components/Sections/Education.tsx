@@ -6,7 +6,7 @@ import classes from "@/app/constants/classes";
 
 export default function Education() {
     return(
-        <div style={{minHeight: '100%', maxWidth: "900px", display: 'flex', flexDirection: 'column', justifyContent: 'center', gap: '10px'}} id = "Education">
+        <div style={{maxWidth: "900px", gap: '10px'}} id = "Education" className="section">
             <motion.div
                 initial={{opacity: 0, y: 25}}
                 whileInView={{opacity: 1, y: 0}}

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function About() {
     return(
-        <div style={{minHeight: '100%', maxWidth: "900px", padding: '20px', display: 'flex', flexDirection: 'column', justifyContent: 'center'}} id="About">
+        <div style={{maxWidth: "900px", padding: '20px'}} id="About" className="section">
             <motion.div
                 initial={{opacity: 0, y: 25}}
                 whileInView={{opacity: 1, y: 0}}

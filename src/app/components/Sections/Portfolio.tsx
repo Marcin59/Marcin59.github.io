@@ -7,7 +7,7 @@ import PopoverList from "./components/PopoverList/PopoverList";
 
 const Portfolio = () => {
     return (
-        <div style={{width: "100%", display: 'flex', justifyContent: 'center', minHeight: '100% !important', flexDirection: 'column', alignItems: 'center'}} id = "Portfolio">
+        <div style={{alignItems: 'center'}} id = "Portfolio" className="section">
             <div style={{maxWidth: "900px", width: '100%'}}>
                 <motion.div
                     initial={{opacity: 0}}

@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 
 export default function Experience() {
     return(
-        <div style={{minHeight: '100%', width: "min(100%, 900px)", display: 'grid', scrollBehavior: "smooth"}} id = "Experience">
+        <div style={{display: 'grid', scrollBehavior: "smooth"}} id = "Experience" className="section">
             <motion.div
                 initial={{opacity: 0,}}
                 whileInView={{opacity: 1}}
