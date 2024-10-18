@@ -10,16 +10,32 @@ import { Box, Typography } from '@mui/material';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faReact, faWordpressSimple } from '@fortawesome/free-brands-svg-icons';
 import { faMagnifyingGlassChart } from '@fortawesome/free-solid-svg-icons';
-import { TimelineOppositeContent } from '@mui/lab';
+import TimelineOppositeContent, {
+  timelineOppositeContentClasses,
+} from '@mui/lab/TimelineOppositeContent';
 import { motion } from 'framer-motion';
+import { useContainerDimensions } from '@/app/hooks/useContainerDimensions';
 
 export default function ExperienceTimeline() {
-  return (
-    <Timeline position="alternate">
 
+  const componentRef = React.useRef<HTMLUListElement>(null)
+  const { width, height } = useContainerDimensions(componentRef)
+  
+  return (
+    <Timeline ref={componentRef} position={width > 800 ? "alternate" : 'right'}
+      sx={{
+        [`& .${timelineOppositeContentClasses.root}`]: {
+          flex: (width > 800 ? 1 : (
+            width > 400 ? 0.2 : 0
+          )),
+          display: (width > 400 ? 'block' : 'none'),
+        },
+        padding: (width > 400 ? '6px 16px' : '2px 8px'),
+      }}
+    >
       <TimelineItem>
         <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: 'auto 0', textAlign: (width > 400 ? 'right' : 'left') }}
             variant="body1"
           >
             <motion.div
@@ -44,8 +60,8 @@ export default function ExperienceTimeline() {
             viewport={{ once: true }}
             transition={{duration: 1, delay: 0.5}}
           >
-            <Typography variant="h5">GHOST Member</Typography>
-            <Typography variant='body2'>ML in Timeseries science club at PUT</Typography>
+            <Typography variant="h5" sx={{ fontSize: (width > 400 ? 'inherit' : '1.2rem') }}>GHOST Member</Typography>
+            <Typography variant='body2' sx={{ fontSize: (width > 400 ? 'inherit' : '0.9rem') }}>ML in Timeseries science club at PUT</Typography>
             <Box sx = {{margin: "5px 0 0 10px"}}>
               <ul>
                 <li>
@@ -62,11 +78,11 @@ export default function ExperienceTimeline() {
 
       <TimelineItem>
         <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: 'auto 0', textAlign: (width > 400 ? 'right' : 'left') }}
             variant="body1"
           >
             <motion.div
-              initial={{opacity: 0, x: 25}}
+              initial={{opacity: 0, x: width > 800 ? 25 : -25}}
               whileInView={{opacity: 1, x: 0}}
               viewport={{ once: true }}
               transition={{duration: 1, delay: 1.1}}
@@ -82,14 +98,14 @@ export default function ExperienceTimeline() {
         </TimelineSeparator>
         <TimelineContent>
           <motion.div
-            initial={{opacity: 0, x: -25}}
+            initial={{opacity: 0, x: width > 800 ? -25 : 25}}
             whileInView={{opacity: 1, x: 0}}
             viewport={{ once: true }}
             transition={{duration: 1, delay: 1.0}}
           >
-            <Typography variant="h5">Frontend Developer</Typography>
-            <Typography variant='body2'>Stock Trade IQ</Typography>
-            <Box sx = {{margin: "5px 10px 0 0", direction: 'rtl'}}>
+            <Typography variant="h5" sx={{ fontSize: (width > 400 ? 'inherit' : '1.2rem') }}>Frontend Developer</Typography>
+            <Typography variant='body2' sx={{ fontSize: (width > 400 ? 'inherit' : '0.9rem') }}>Stock Trade IQ</Typography>
+            <Box sx = {{margin: "5px 10px 0 0", direction: (width > 800 ? "rtl" : 'ltr')}}>
               <ul>
                 <li>
                   Developing React app for stock prices analysis
@@ -120,7 +136,7 @@ export default function ExperienceTimeline() {
 
       <TimelineItem>
         <TimelineOppositeContent
-            sx={{ m: 'auto 0' }}
+            sx={{ m: 'auto 0', textAlign: (width > 400 ? 'right' : 'left') }}
             variant="body1"
           >
             <motion.div
@@ -144,9 +160,9 @@ export default function ExperienceTimeline() {
             viewport={{ once: true }}
             transition={{duration: 1, delay: 1.5}}
           >
-            <Typography variant="h5">Wordpress Developer</Typography>
-            <Typography variant='body2'>BCSG</Typography>
-            <Box sx = {{margin: "5px 0 0 10px"}}>
+            <Typography variant="h5" sx={{ fontSize: (width > 400 ? 'inherit' : '1.2rem') }}>Wordpress Developer</Typography>
+            <Typography variant='body2' sx={{ fontSize: (width > 400 ? 'inherit' : '0.9rem') }}>BCSG</Typography>
+            <Box sx = {{margin: "5px 0 0 10px", fontSize: { xs: '1rem', md: '1.25rem' }}}>
               <ul>
                 <li>
                   Developing portfolio website for Software Development company
