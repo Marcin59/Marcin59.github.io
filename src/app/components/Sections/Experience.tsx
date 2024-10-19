@@ -15,7 +15,7 @@ export default function Experience() {
             >
                 <Typography variant="h2" sx={{color: "primary.main", fontWeight: 'bold', height: 'auto'}}>Experience</Typography>
             </motion.div>
-            <div>
+            <div style={{width: '100%'}}>
                 <ExperienceTimeline/>
             </div>
         </div>

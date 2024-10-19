@@ -31,6 +31,7 @@ export default function ExperienceTimeline() {
           display: (width > 400 ? 'block' : 'none'),
         },
         padding: (width > 400 ? '6px 16px' : '2px 8px'),
+        width: '100%',
       }}
     >
       <TimelineItem>
@@ -162,7 +163,7 @@ export default function ExperienceTimeline() {
           >
             <Typography variant="h5" sx={{ fontSize: (width > 400 ? 'inherit' : '1.2rem') }}>Wordpress Developer</Typography>
             <Typography variant='body2' sx={{ fontSize: (width > 400 ? 'inherit' : '0.9rem') }}>BCSG</Typography>
-            <Box sx = {{margin: "5px 0 0 10px", fontSize: { xs: '1rem', md: '1.25rem' }}}>
+            <Box sx = {{margin: "5px 0 0 10px"}}>
               <ul>
                 <li>
                   Developing portfolio website for Software Development company

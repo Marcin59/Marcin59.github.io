@@ -18,9 +18,11 @@ export const useContainerDimensions = (myRef: React.RefObject<HTMLElement>) => {
       }
   
       window.addEventListener("resize", handleResize)
+      window.addEventListener("animationstart", handleResize)
   
       return () => {
         window.removeEventListener("resize", handleResize)
+        window.removeEventListener("animationstart", handleResize)
       }
     }, [myRef])
   
