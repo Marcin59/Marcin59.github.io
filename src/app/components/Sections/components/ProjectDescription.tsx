@@ -31,14 +31,14 @@ const ProjectDescription = ({
       viewport={{ once: true }}
       transition={{duration: 2}}
     >
-        <div style={{textAlign: fromLeft === "false" ? 'right' : 'left'}}>
+        <div style={{textAlign: fromLeft === "false" ? 'right' : 'left', position: "absolute", width: 'calc(90% - 30px)'}}>
           <Typography variant='h4' color='primary.main'>{name}</Typography>
         </div>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexGrow: 1 }}>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '20px', flexGrow: 1 , justifyContent: 'space-around'}}>
           {fromLeft === "false" && image && (
             <Image src={image.path} alt={`${name} project`} width={image.width} height={image.height} />
           )}
-          <Typography>{description}</Typography>
+          <Typography sx={{maxWidth: '450px'}}>{description}</Typography>
           {fromLeft === "true" && image && (
             <Image src={image.path} alt={`${name} project`} width={image.width} height={image.height} />
           )}

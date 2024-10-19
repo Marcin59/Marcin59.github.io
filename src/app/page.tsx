@@ -20,7 +20,7 @@ export default function Home() {
           </div>
         </div>
         <Box sx={{
-          width: '90%', height: '90%', padding: {xs: "0", md: '0 50px 0px 50px'},
+          width: '100%', height: '90%', padding: {xs: "0", md: '0 20px 0px 20px'},
           position: 'relative', color: 'text.primary', display: 'flex',
           justifyContent: 'center', overflow: 'auto', flexWrap: 'wrap',
           scrollBehavior: 'smooth', gap: '10px'
