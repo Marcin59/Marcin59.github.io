@@ -26,11 +26,11 @@ export default function ExperienceTimeline() {
       sx={{
         [`& .${timelineOppositeContentClasses.root}`]: {
           flex: (width > 800 ? 1 : (
-            width > 400 ? 0.2 : 0
+            width > 450 ? 0.2 : 0
           )),
-          display: (width > 400 ? 'block' : 'none'),
+          display: (width > 450 ? 'block' : 'none'),
         },
-        padding: (width > 400 ? '6px 16px' : '2px 8px'),
+        padding: (width > 450 ? '6px 16px' : '2px 8px'),
         width: '100%',
       }}
     >
