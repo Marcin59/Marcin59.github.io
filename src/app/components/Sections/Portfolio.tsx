@@ -22,7 +22,7 @@ const Portfolio = () => {
                     transition={{duration: 1}}
                     style={{marginBottom: "20px"}}
                 >
-                    <Typography variant="h2" sx={{color: "primary.main", fontWeight: 'bold'}}>Portfolio</Typography>
+                    <Typography variant="h2" className="sectionHeader sectionText">Portfolio</Typography>
                 </motion.div>
             </div>
             <div style={{width: '100%'}} ref={componentRef}>

@@ -1,7 +1,7 @@
 'use client';
 import { createTheme } from "@mui/material/styles";
 
-const PalleteTheme = createTheme({
+const InitialTheme = createTheme({
     palette: {
       primary: {
         main: '#EB4E4E',
@@ -22,7 +22,7 @@ const PalleteTheme = createTheme({
 const DefaultTheme = createTheme({
     typography: {
         body2:{
-            color: PalleteTheme.palette.text.secondary,
+            color: InitialTheme.palette.text.secondary,
         }
     },
     components: {
@@ -50,8 +50,22 @@ const DefaultTheme = createTheme({
                     }
                 })
             }
-        }
-    }
-}, PalleteTheme);
+        },
+        MuiCssBaseline: {
+            styleOverrides: {
+                '.sectionHeader': {
+                    color: InitialTheme.palette.primary.main,
+                },
+                '.sectionText': {
+                    textAlign: "left",
+                    [InitialTheme.breakpoints.down('md')]: {
+                        textAlign: "center",
+                    },
+                    width: "100%",
+                },
+            },
+        },
+    },
+}, InitialTheme);
 
 export default DefaultTheme;

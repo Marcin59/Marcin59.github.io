@@ -87,12 +87,12 @@ export default function PopoverList({items}: PopoverListProps) {
                             ref={presenceRef}
                             layoutId={selectedId}
                             style={{
-                                width: isSmall ? "90vw" : '550px', height: isSmall ? "50vh" : '350px',
+                                width: isSmall ? "90vw" : '550px', minHeight: isSmall ? "50vh" : '350px',
                                 position: isSmall ? "fixed" : "relative", top: 0, left: 0,
                                 margin: isSmall ? '25vh 5vw' : '0px', zIndex: 100,
                             }}
                         >
-                            <Paper sx={{width: '100%', height: '100%'}}>
+                            <Paper sx={{width: '100%', height: '100%',}}>
                                 {/* <motion.h5>{item.subtitle}</motion.h5>
                                 <motion.h2>{item.title}</motion.h2> */}
                                 <div style={{position: 'absolute', right: '10px', top: '10px', zIndex:'10'}}>
