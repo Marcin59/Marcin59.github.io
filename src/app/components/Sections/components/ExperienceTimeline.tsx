@@ -88,7 +88,7 @@ export default function ExperienceTimeline() {
               viewport={{ once: true }}
               transition={{duration: 1, delay: 1.1}}
             >
-              May 2022 - August 2023
+              May 2022 - August 2024
             </motion.div>
         </TimelineOppositeContent>
         <TimelineSeparator>

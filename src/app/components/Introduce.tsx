@@ -1,3 +1,4 @@
+'use client';
 import { Box, Button, Divider, IconButton, Typography } from "@mui/material";
 import socialMedia from "../constants/socialMedia";
 import Image from 'next/image';
@@ -29,11 +30,11 @@ export default function Introduce() {
             <Box sx={{ bottom: 0, position: 'absolute', width: '100%' }}>
                 <Divider variant="middle"/>
                 <Box sx={{ display: 'flex', justifyContent: 'space-evenly' }}>
-                    <Button size="large" sx={{ width: '100%', height: '60px' }}>
+                    <Button size="large" sx={{ width: '100%', height: '60px' }} href="/resumeEN.pdf" download>
                         Download CV
                     </Button>
                     <Divider orientation="vertical" flexItem sx={{ height: '40px' }}/>
-                    <Button  size="large" sx={{ width: '100%', height: '60px' }}>
+                    <Button size="large" sx={{ width: '100%', height: '60px' }} href="mailto:marcin.kapiszewski@gmail.com" target="_blank">
                         Contact Me
                     </Button>
                 </Box>
