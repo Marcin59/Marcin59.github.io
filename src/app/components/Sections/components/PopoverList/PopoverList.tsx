@@ -89,7 +89,7 @@ export default function PopoverList({items}: PopoverListProps) {
                             style={{
                                 width: isSmall ? "90vw" : '550px', minHeight: isSmall ? "50vh" : '350px',
                                 position: isSmall ? "fixed" : "relative", top: 0, left: 0,
-                                margin: isSmall ? '25vh 5vw' : '0px', zIndex: 100,
+                                margin: isSmall ? '15vh 5vw auto 5vw' : '0px', zIndex: 100,
                             }}
                         >
                             <Paper sx={{width: '100%', height: '100%',}}>

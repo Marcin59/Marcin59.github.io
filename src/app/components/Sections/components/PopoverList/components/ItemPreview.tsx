@@ -20,7 +20,7 @@ const ItemPreview = ({
                 position: 'relative',
             }}
         >
-            <Typography color= 'primary.main' variant="h5">{project.name}</Typography>
+            <Typography color= 'primary.main' variant="h5" style={{textAlign: 'center'}}>{project.name}</Typography>
             <div style={{position: 'absolute', bottom: 5, display: 'flex', justifyContent: 'space-around', width: "100%", alignItems: 'center'}}>
                 <div style={{display: 'flex', gap: '5px'}}>
                     {project.tools?.map((tool, index) => (

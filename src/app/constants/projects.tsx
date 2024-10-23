@@ -3,6 +3,18 @@ import technologyLogos from "./technologyLogos";
 
 const projects: ProjectInterface[] = [
     {
+        name: "Recommendation System",
+        description: "This project involved building a movie recommendation system using the K-means clustering algorithm to group users based on their movie ratings and predict future preferences. We implemented the solution using Python and scikit-learn, focusing on data preprocessing, clustering, and model evaluation through Mean Squared Error (MSE). The work was done collaboratively, and we prepared a comprehensive report detailing each step of the process.",
+        tools: [technologyLogos.python, technologyLogos.scikitLearn],
+        github: "https://github.com/Marcin59/Movie_Recommendation_System",
+        image: {
+            path: "/projects/movie_poster.png",
+            alt: "Poster",
+            width: 400,
+            height: 300
+        }
+    },
+    {
         name: "House Pricing dataset",
         description: "This project focused on improving the general classification result (MSE) of a regression model by applying pre-processing algorithms from various fields, including feature normalization and standardization, feature selection, and feature extraction. We worked in groups and prepared a comprehensive report detailing the entire pipeline created in sklearn library.",
         tools: [technologyLogos.python, technologyLogos.scikitLearn],
