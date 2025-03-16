@@ -3,14 +3,21 @@ import technologyLogos from "./technologyLogos";
 
 const classes: ClassInterface[] = [
     {
-        name: "Data Mining",
-        description: "In Data Mining, we delve into association rules, clustering, data annotation and augmentation, and data preprocessing. As part of our project, we developed a movie recommendation system based on clustering and performed data preprocessing for a selected regression dataset.",
+        name: "Computer Vision",
+        description: `During my Computer Vision course, I worked in two-member teams on three projects: detecting moving objects in DAS recordings by analyzing fiber optic data, tracking board game (Splendor) pieces and player actions from video, and training deep learning models for semantic segmentation on the LIP dataset. These projects strengthened my skills in image processing, deep learning, and object tracking.`,
+        semester: 5,
         tools: [
-            technologyLogos.scikitLearn,
-            technologyLogos.django,
-            technologyLogos.numpy,
-        ],
-        semester: 4,
+            technologyLogos.tensorFlow,
+            technologyLogos.openCV
+        ]
+    },
+    {
+        name: "Deep Learning",
+        description: "During my Deep Learning course, I worked in two-member teams on three projects: designing a lightweight model to approximate a complex probabilistic function, developing a CNN for crack detection in wall images, and identifying patterns in time-series sensor data from a production line. These projects enhanced my skills in neural network optimization, computer vision, and time-series analysis.",
+        semester: 5,
+        tools: [
+            technologyLogos.tensorFlow
+        ]
     },
     {
         name: "Problem Classes",
@@ -22,29 +29,22 @@ const classes: ClassInterface[] = [
         ]
     },
     {
+        name: "Data Mining",
+        description: "In Data Mining, we delve into association rules, clustering, data annotation and augmentation, and data preprocessing. As part of our project, we developed a movie recommendation system based on clustering and performed data preprocessing for a selected regression dataset.",
+        tools: [
+            technologyLogos.scikitLearn,
+            technologyLogos.django,
+            technologyLogos.numpy,
+        ],
+        semester: 4,
+    },
+    {
         name: "Software Engineering",
         description: "In Software Engineering, we explored the lifecycle of software development, emphasizing teamwork and collaboration. Our primary focus was on creating products using best practices and methodologies to ensure high-quality software solutions.",
         semester: 4,
         tools: [
             technologyLogos.java,
             technologyLogos.JUnit,
-        ]
-    },
-    {
-        name: "Deep Learning",
-        description: "Lorem ipsum",
-        semester: 5,
-        tools: [
-            technologyLogos.tensorFlow
-        ]
-    },
-    {
-        name: "Computer Vision",
-        description: "Lorem ipsum",
-        semester: 5,
-        tools: [
-            technologyLogos.tensorFlow,
-            technologyLogos.openCV
         ]
     },
     {

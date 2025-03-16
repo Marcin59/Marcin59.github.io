@@ -3,6 +3,18 @@ import technologyLogos from "./technologyLogos";
 
 const projects: ProjectInterface[] = [
     {
+        name: "AI'Inspired",
+        description: "This project investigates the impact of different sources of visual inspiration on creative outcomes, comparing AI-generated images (Midjourney V6) with web-sourced images. The similarity between inspiration images and final student design projects was quantified using computer vision techniques and deep learning embeddings.",
+        tools: [technologyLogos.python, technologyLogos.pytorch, technologyLogos.openCV],
+        github: "https://github.com/adamtms/AI-nspired",
+        image: {
+            path: "/projects/AIinspired.png",
+            alt: "Poster",
+            width: 450,
+            height: 280
+        }
+    },
+    {
         name: "Recommendation System",
         description: "This project involved building a movie recommendation system using the K-means clustering algorithm to group users based on their movie ratings and predict future preferences. We implemented the solution using Python and scikit-learn, focusing on data preprocessing, clustering, and model evaluation through Mean Squared Error (MSE). The work was done collaboratively, and we prepared a comprehensive report detailing each step of the process.",
         tools: [technologyLogos.python, technologyLogos.scikitLearn],

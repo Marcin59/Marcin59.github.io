@@ -23,8 +23,8 @@ export default function Education() {
             >
                 <Typography variant="h3" sx={{marginBottom: "10px"}} className="sectionText" >Poznań University of Technology</Typography>
                 <Typography variant="body1" className="sectionText">Bachelor of Science in Artificial Intelligence</Typography>
-                <Typography variant="body1" className="sectionText">Expected Graduation: 2025</Typography>
-                <Typography variant="body1" className="sectionText">Actual semester: 5</Typography>
+                <Typography variant="body1" className="sectionText">Expected Graduation: 2026 Q1</Typography>
+                <Typography variant="body1" className="sectionText">Current semester: 6</Typography>
             </motion.div>
             <PopoverList items={classes}/>
         </div>
