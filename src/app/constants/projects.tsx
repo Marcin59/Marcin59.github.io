@@ -15,6 +15,18 @@ const projects: ProjectInterface[] = [
         }
     },
     {
+        name: "Body Parts Segmentation",
+        description: "This project aims to perform semantic segmentation of human body parts. We utilize the LIP (Look into Person) dataset, which provides detailed annotations for various body parts, making it ideal for this task. The project explores different architectures, including Unet, Segnet, and Deeplab, and evaluates their performance using various optimizers.",
+        tools: [technologyLogos.python, technologyLogos.tensorFlow, technologyLogos.openCV],
+        github: "https://github.com/Marcin59/Segmentation_of_Body_Parts",
+        image: {
+            path: "/projects/LIP_seg.png",
+            alt: "Example Segmentation",
+            width: 450,
+            height: 225
+        }
+    },
+    {
         name: "Recommendation System",
         description: "This project involved building a movie recommendation system using the K-means clustering algorithm to group users based on their movie ratings and predict future preferences. We implemented the solution using Python and scikit-learn, focusing on data preprocessing, clustering, and model evaluation through Mean Squared Error (MSE). The work was done collaboratively, and we prepared a comprehensive report detailing each step of the process.",
         tools: [technologyLogos.python, technologyLogos.scikitLearn],
